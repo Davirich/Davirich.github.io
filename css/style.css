@@ -100,6 +100,7 @@ main {
     transform: scale(1.1);
 }
 
+
 .sobre-item p {
     margin-right: 20px;
     text-align: justify;
@@ -166,6 +167,25 @@ ul, li {
     font-size: 26px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #125cca;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.4s;
+}
+
+.projetos a:hover{
+    transform: scale(1.1);
 }
 
 /*visual da parte de entrar em contato por meio de um formulário*/
@@ -227,8 +247,8 @@ footer {
     }
 }
 
-@media (max-width: 467px) {
-    header, nav, footer {
+@media (max-width: 550px) {
+    .sobre, .educacao, .projetos {
         width: 100%;
     }
 }
