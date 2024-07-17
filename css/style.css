@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: block;
+    background-color: #8a8a8a;
+}
+
+/*visual do cabeçalho*/
+header {
+    background-color: #000000af;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+/*visual da aba de navegação*/
+nav{
+    background-color: #1f1e27;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-size: 25px;
+}
+
+nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.75s;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.5s;
+}
+
+nav a:hover{
+    background-color: #124187;
+    transform: scale(1.15);
+}
+
+/*visual do corpo do site*/
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*visual da primeira seção onde constam imagens*/
+.sobre {
+    background-color: #000000af;
+    border-radius: 10px;
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.sobre-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.texto{
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.texto a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #125cca;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.4s;
+}
+
+.texto a:hover{
+    transform: scale(1.1);
+}
+
+.sobre-item p {
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.sobre-item img {
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+/*visual do titulo do cabeçalho*/
+h1 {
+    color: #cfcdc9;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/*visual dos titulos*/
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #cfcdc9;
+}
+
+/*visual dos paragrafos*/
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: #d6d0c8;
+}
+
+/*visual da seção da formação academica*/
+.educacao {
+    background-color: #000000af;
+    border-radius: 10px;
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 26px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    color: #d6d0c8;
+}
+
+.educacao li span{
+    margin-left: 35px;
+}
+
+ul, li {
+    list-style: inside;
+    text-align: left;
+    padding-left: 10%;
+    margin: 10px 0;
+}
+
+/*visual dos projetos*/
+.projetos {
+    background-color: #000000af;
+    border-radius: 10px;
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 26px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+/*visual da parte de entrar em contato por meio de um formulário*/
+form {
+    width: 100%;
+    color: #d6d0c8;
+}
+
+table {
+    background-color: #1f1e27;
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    font-size: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #124187;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0a48a1;
+    transform: scale(1.1);
+}
+
+/*visual do roda-pé do site*/
+footer {
+    background-color: #000000af;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1200px) {
+    .sobre-item img {
+        display: none;
+    }
+}
+
+@media (max-width: 467px) {
+    header, nav, footer {
+        width: 100%;
+    }
+}
